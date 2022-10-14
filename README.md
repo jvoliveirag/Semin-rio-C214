@@ -22,9 +22,8 @@ Referente ao projeto desenvolvido para o seminário da disciplina de Engenharia 
   - <a href="#angular">Angular</a>
   - <a href="#instal">Instalação</a>
 - <a href="#requirements">Pré-requisitos</a>
-  - <a href="#node">Node JS</a>
+- <a href="#testes">Testes</a>
 - <a href="#howTo">Como executar</a>
-- <a href="#final">Considerações finais</a>
 </div>
 
 # <div id=ideia>Ideia 💡</div>	
@@ -43,14 +42,36 @@ O <a href="https://angular.io/">Angular</a> é um framework JavaScript reativo m
 ## <div id=instal>Instalação</div>
 Não é necessária a instalação, pode ser inserido via <a href="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">API do google</a>, diretamente no <a href="https://github.com/jvoliveirag/Seminario-C214/blob/main/src/main/index.html">script</a> do HTML, por exemplo. Mas, caso queira conferir, basta <a href="https://angular.io/guide/setup-local">clicar aqui</a> para acessar a documentação.
 
+Mas, basicamente a instalação e criação de um projeto Angular pode ser feita seguindo os seguites passos:
+
+1. Instale o Angular cli:
+```
+npm i -g @angular/cli
+```
+2. Crie um projeto
+```
+ng new <nome do projeto>
+```
+
+# <div id=requirements>Pré requisitos ✅</div>
+É necessário ter o <a href="https://nodejs.org/en/">Node Js</a> instalado, é ele quem será o responsável pelo gerenciamento das dependências do projeto. No mais, todo o restante será gerido pelo próprio Angular, dentro do projeto.
 
 # <div id=testes>Testes - Jasmine 🧪</div>
 
-
-# <div id=requirements>Pré requisitos ✅</div>
-É necessário ter o <a href="https://nodejs.org/en/">Node Js</a> instalado.
+Podemos instalar o Jasmine pelo terminal com o seguinte comando:
+```
+npm i jasmine
+```
+E em seguida, inciá-lo.
+```
+jasmine init
+```
+A execução será mostrada a seguir.
+Obs.: documentação do Jasmine pode ser encontrada clicando <a href="https://jasmine.github.io/pages/getting_started.html">aqui</a>.
 
 # <div id=howTo>Como executar ⚙️</div>
+
+## Executando a aplicação
 1. Clone este repositório em sua máquina;
 2. Em seguida, digite o comando abaixo no terminal:
 ```
@@ -68,4 +89,21 @@ node server.js
 ```
 6. No terminal será exibida a mensagem "Server running...", indicando que a aplicação está sendo executada, sendo assim basta <a href="http://localhost:8080">clicar aqui</a> para exibi-la no navegador.
 
-# <div id=final>Considerações finais 📝</div>
+Com o ambiente já configurado, é hora de rodar os testes.
+## Executando os testes (no terminal)
+
+1. Basta estar no diretório raiz da aplicação e executar o seguinte comando no terminal: 
+```
+npm test
+```
+2. Os testes serão exibidos em seguida mostrando seus respectivos resultados.
+
+## Testes com o Karma no Browser
+
+Dentro do diretório da aplicação execute o seguinte comando:
+```
+ng test
+```
+Uma página do seu navegador padrão abrirá e serão exibidos os testes e seus resultados.
+Além disso os resultados também são exibidos em tempo real no terminal, ou seja, mesmo enquanto estão sendo feitas alterações no código é possível ver se o teste passa ou não.
+
