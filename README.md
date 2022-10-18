@@ -69,6 +69,8 @@ jasmine init
 A execução será mostrada a seguir.
 Obs.: documentação do Jasmine pode ser encontrada clicando <a href="https://jasmine.github.io/pages/getting_started.html">aqui</a>.
 
+OBS.: Os testes que foram executados durante a apresentação em sala de aula podem ser encontrados <a href="https://github.com/jvoliveirag/Seminario-C214/tree/main/testes_apresentados">aqui</a>, e sua execução se dá conforme descrito abaixo.
+
 # <div id=howTo>Como executar ⚙️</div>
 
 ## Executando a aplicação
